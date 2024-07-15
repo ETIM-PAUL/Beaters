@@ -26,10 +26,12 @@ function Dashboard() {
             <div className="card-div">
                 <p className="card-text medium-gray-text">Total beats uploaded</p>
                 <p className="card-hero">10</p>
+                <p className='card-text'> <img src="./uparrow.svg" alt="" /> 4 compared to last month</p>
             </div>
             <div className="card-div">
                 <p className="card-text medium-gray-text">Total beats purchased</p>
                 <p className="card-hero">10</p>
+                <p className='card-text'> <img src="./uparrow.svg" alt="" /> 4 compared to last month</p>
             </div>
         </div>
 

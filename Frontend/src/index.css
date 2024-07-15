@@ -38,13 +38,17 @@ body {
   font-weight: 600;
   padding: 0;
   margin: 0;
+  margin-bottom: -2vh;
+  color: #000;
+  text-align: left;
 }
 
 .medium-gray-text {
   font-size: 16px;
   font-weight: 500;
   color: #98A2B3;
-  margin: 0;
+  margin-top: 0;
+  padding: 0;
 }
 
 .small-gray-text {
@@ -111,9 +115,6 @@ p.dot {
   margin: 3vh 0;
 }
 
-.table-ctn {
-}
-
 .table-ctn > table {
   width: 100%;
   min-width: 80vw;
@@ -147,4 +148,120 @@ tbody tr:nth-of-type(odd) {
   color: #344054;
   border-radius: 8px;
   border: 1px solid rgb(125, 122, 122);
+}
+
+/* market place */
+.market-ctn-btn {
+  background-color: #001DF5;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1vh 0.9vw;
+}
+
+.card-ctn {
+  width: auto;
+  flex-basis: 21%;
+  height: 389px;
+  padding: 2vh 16px 8vh;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1.4px solid #E5E5EA;
+  text-align: left;
+  margin-top: 3vh;
+  cursor: pointer;
+}
+
+.feelings {
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: 600;
+  line-height: 22.4px;
+  text-align: left;
+  margin-bottom: 1vh;
+}
+
+.small-rule {
+  /* background-color: #E5E5EA; */
+  border: 1.4px solid #E5E5EA;
+  margin-top: 2vh;
+}
+
+.band-ctn {
+  padding: 1vh 1vw;
+  background: #EDEEF2;
+  border-radius: 6px;
+  margin-top: 2vh;
+}
+
+.band-ctn p {
+  margin: 0;
+}
+
+.monkey-img {
+  width: 100%;
+}
+
+.items-ctn {
+  flex-flow: wrap;
+}
+
+.slide-ctn {
+  overflow-x: scroll;
+  margin-top: 5vh;
+}
+
+.slide {
+  background: #EDEEF2;
+  padding: 0.2vh 0.5vw;
+  width: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slide p {
+  margin: 0;
+}
+
+.slide img {
+  margin-right: 0.4vw;
+}
+
+.selected {
+  background-color: #1D192B;
+  color: #EDEEF2;
+}
+
+/* filter */
+.filter-card {
+  width: 20vw;
+  background-color: #fff;
+  box-shadow: 0px 16px 32px -12px #07204540;
+  width: Fixed (308px)px;
+  height: Hug (240px)px;
+  top: 138px;
+  left: 33px;
+  padding: 2vh 1vw;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+  position: absolute;
+  left: 5vw;
+  top: 25vh;
+}
+
+.filter-text {
+  margin: 0;
+}
+
+.action {
+  padding: 1.4vh;
+  cursor: pointer;
+}
+
+.action:hover {
+  background-color: rgba(189, 184, 184, 0.2);
+}
+
+.filter-div {
+  position: relative;
 }
