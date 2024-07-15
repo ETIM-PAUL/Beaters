@@ -157,8 +157,7 @@ contract Soundlink is ERC721, ERC721URIStorage {
     }
 
     // The following functions are overrides required by Solidity.
-      function _burn(uint256 tokenId) internal override(ERC721, ERC721URIStorage) {
-        ERC721URIStorage._burn(tokenId);
+    function _burn(uint256 tokenId) internal override(ERC721) {
         ERC721._burn(tokenId);
     }
 
