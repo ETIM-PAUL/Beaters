@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Filter() {
+function FilterComp() {
   return (
     <div className='filter-card'>
         <div className='filter-header flx'>
@@ -34,4 +34,4 @@ function Filter() {
   )
 }
 
-export default Filter
+export default FilterComp

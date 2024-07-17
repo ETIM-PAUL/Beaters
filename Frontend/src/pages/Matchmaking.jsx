@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Filter from '../components/Filter';
+import FilterComp from '../components/Filter';
 
-function Marketplace() {
+function Matchmaking() {
     const [options, showOptions] = useState(false)
   return (
     <div className='market-ctn'>
@@ -20,7 +20,7 @@ function Marketplace() {
                 <img src="./sort-icon.svg" alt="" />
                 <span>Filter</span>
             </div>
-            {options && <Filter />}
+            {options && <FilterComp />}
             <div className="slide selected">
                 <img src="./check-icon.svg" alt="" />
                 <span>Afrobeats</span>
@@ -94,4 +94,4 @@ function Marketplace() {
   )
 }
 
-export default Marketplace
+export default Matchmaking
