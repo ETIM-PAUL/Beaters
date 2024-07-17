@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import Home from './pages/Home.jsx'
 import './index.css'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Dashboard from './pages/Dashboard.jsx'
-import Marketplace from './pages/Matchmaking.jsx'
+import Marketplace from './pages/MarketPlace.jsx'
 import Matchmaking from './pages/Matchmaking.jsx'
 import Feed from './pages/Feed.jsx'
 

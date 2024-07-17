@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import './App.css'
 
-function App() {
+function Home() {
   const [count, setCount] = useState(0)
 
   return (
@@ -10,14 +10,16 @@ function App() {
     {/* <Dashboard /> */}
     {/* <Marketplace /> */}
     {/* <Matchmaking /> */}
-    <div className='layout-ctn flx'>
-      <div className="sidebar-ctn"></div>
-      <div className="body-ctn">
-        <Outlet />
-      </div>
+
+    <div className='layout-ctn'>
+      <MainAppWrapper>
+        <div className="body-ctn">
+          <Outlet />
+        </div>
+      </MainAppWrapper>
     </div>
     </>
   )
 }
 
-export default App
+export default Home
