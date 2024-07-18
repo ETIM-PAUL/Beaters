@@ -6,6 +6,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   /* line-height: 1.5; */
   font-weight: 400;
+  height:100vh;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -179,9 +180,7 @@ tbody tr:nth-of-type(odd) {
 
 /* market place */
 .market-ctn-btn {
-  background-color: #001DF5;
   color: #fff;
-  border: none;
   border-radius: 10px;
   padding: 1vh 0.9vw;
 }
@@ -239,7 +238,7 @@ tbody tr:nth-of-type(odd) {
 
 .slide {
   background: #EDEEF2;
-  padding: 0.2vh 0.5vw;
+  padding: 0.7vh 0.5vw;
   width: auto;
   border-radius: 5px;
   cursor: pointer;

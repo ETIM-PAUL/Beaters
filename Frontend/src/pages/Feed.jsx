@@ -1,7 +1,9 @@
 import React from 'react'
 
-function Feed() {
+const Feed = () => {
+
   return (
+    <Feed>
     <div className='dash-ctn'>
         <div className="welcome-ctn">
             <div className="welcome-text-ctn medium-gray-text">
@@ -216,6 +218,7 @@ function Feed() {
             </div>
         </div>
     </div>
+    </Feed>
   )
 }
 

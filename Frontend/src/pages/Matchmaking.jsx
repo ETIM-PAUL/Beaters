@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import FilterComp from '../components/Filter';
 
-function Matchmaking() {
+const Matchmaking = () => {
+
     const [options, showOptions] = useState(false)
   return (
     <div className='market-ctn'>
