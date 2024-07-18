@@ -1,48 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
+import MainAppWrapper from '../components/MainAppWrapper'
 
-function Marketplace() {
+const MarketPlace = () => {
+    const [cat, setCat] = useState("Afrobeats")
+    const genres = ["Afrobeats", "Hip-hop/rap", "Alternative", "Reggae", "R&B", "Deep house", "Progressve house", "Drum & Bass", "Rock", "Electronic"]
+
   return (
+    <MainAppWrapper>
     <div className='market-ctn'>
         <div className="welcome-ctn grid grid-cols-2">
-            <div className="welcome-text-ctn medium-gray-text">
+            <div className="welcome-text-ctn medium-gray-text flex flex-col">
                 <h4>Marketplace</h4>
-                <p>Listings on the marketplace</p>
+                <p className='mt-4'>Listings on the marketplace</p>
             </div>
-            <button className='market-ctn-btn'>
+            <button className='market-ctn-btn bg-[#394661] border border-[#41557B]'>
                 Create a listing
             </button>
         </div>
 
-        <div className="slide-ctn flx">
+        <div className="slide-ctn flex w-full flex-wrap gap-4">
             <div className="slide flx">
                 <img src="./sort-icon.svg" alt="" />
                 <span>Filter</span>
             </div>
-            <div className="slide selected">
-                <img src="./check-icon.svg" alt="" />
-                <span>Afrobeats</span>
+            {genres.map((genre) => (
+            <div key={genre} className={`${cat == {genre} ? "block selected" : ""} slide p-2 flex`}>
+                <img src="./check-icon.svg" alt="" className={`${cat == genre ? "flex" : "hidden"} text-green-500`} />
+                <span>{genre}</span>
             </div>
-            <div className="slide">
-                <span>Hip-hop/rap</span>
-            </div>
-            <div className="slide">
-                <span>Alternative</span>
-            </div>
-            <div className="slide">
-                <span>Reggae</span>
-            </div>
-            <div className="slide">
-                <span>R&B</span>
-            </div>
-            <div className="slide">
-                <span>deep house</span>
-            </div>
-            <div className="slide">
-                <span>progressive house</span>
-            </div>
-            <div className="slide">
-                <span>drum & bass</span>
-            </div>
+            ))}
         </div>
 
         <div className="items-ctn flx">
@@ -152,7 +138,8 @@ function Marketplace() {
             </div>
         </div>
     </div>
+    </MainAppWrapper>
   )
 }
 
-export default Marketplace
+export default MarketPlace

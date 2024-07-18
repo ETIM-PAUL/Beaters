@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import FilterComp from '../components/Filter';
+import FilterComp from '../components/filter';
 
-function Matchmaking() {
+const Matchmaking = () => {
+
     const [options, showOptions] = useState(false)
   return (
     <div className='market-ctn'>

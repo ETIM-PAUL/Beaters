@@ -10,8 +10,8 @@ const MainAppWrapper = ({ children }) => {
   return (
     <div id="admin_wrapper" className={`flex w-full max-w-full`}>
         <AppHeader />
-      <div className={`flex min-h-screen w-full`}>
-        <div className={`mb-0 w-full overflow-hidden mx-auto bg-[#fff] p-3 ${state?.isOpen ? "w-full md:p-8" : " md:p-8"}`}>
+      <div className={`flex h-screen w-full p-10`}>
+        <div className={`mb-0 w-full overflow-hidden mx-auto bg-[#fff] ${state?.isOpen ? "w-full" : ""}`}>
           {/* <TopHeader /> */}
           <Suspense
             fallback={
@@ -22,7 +22,7 @@ const MainAppWrapper = ({ children }) => {
               </div>
             }
           >
-            <div className={`w-full bg-[#fff] h-full overflow-y-auto overflow-x-hidden mt-6 ${!state?.isOpen && "md:px-1"}`}>
+            <div className={`w-full bg-[#fff] h-full overflow-y-auto overflow-x-hidden ${!state?.isOpen && "md:px-1"}`}>
               {children}
             </div>
           </Suspense>

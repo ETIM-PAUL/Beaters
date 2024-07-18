@@ -1,7 +1,8 @@
 import React from 'react'
 
-function Dashboard() {
+const Dashboard = () => {
   return (
+    <Dashboard>
     <div className='dash-ctn'>
         <div className="welcome-ctn grid grid-cols-2">
             <div className="welcome-text-ctn medium-gray-text">
@@ -141,6 +142,7 @@ function Dashboard() {
             </table>
         </div>
     </div>
+    </Dashboard>
   )
 }
 
