@@ -1,8 +1,9 @@
 import React from 'react'
+import MainAppWrapper from '../components/MainAppWrapper'
 
 const Dashboard = () => {
   return (
-    <Dashboard>
+    <MainAppWrapper>
     <div className='dash-ctn'>
         <div className="welcome-ctn grid grid-cols-2">
             <div className="welcome-text-ctn medium-gray-text">
@@ -142,7 +143,7 @@ const Dashboard = () => {
             </table>
         </div>
     </div>
-    </Dashboard>
+    </MainAppWrapper>
   )
 }
 
