@@ -3,7 +3,57 @@ import MainAppWrapper from '../components/MainAppWrapper'
 
 const MarketPlace = () => {
     const [cat, setCat] = useState("Afrobeats")
-    const genres = ["Afrobeats", "Hip-hop/rap", "Alternative", "Reggae", "R&B", "Deep house", "Progressve house", "Drum & Bass", "Rock", "Electronic"]
+    const genres = ["Hip-hop/rap", "Alternative", "Reggae", "R&B", "Deep house", "Progressve house", "Drum & Bass", "Rock", "Electronic"]
+    const albums = [
+      {
+        song_name: "Feelings",
+        subname: "Inscription #45376",
+        amount: "0.02 ETH",
+        time: "2hrs ago"
+      },
+      {
+        song_name: "Feelings",
+        subname: "Inscription #45376",
+        amount: "0.02 ETH",
+        time: "2hrs ago"
+      },
+      {
+        song_name: "Feelings",
+        subname: "Inscription #45376",
+        amount: "0.02 ETH",
+        time: "2hrs ago"
+      },
+      {
+        song_name: "Feelings",
+        subname: "Inscription #45376",
+        amount: "0.02 ETH",
+        time: "2hrs ago"
+      },
+      {
+        song_name: "Feelings",
+        subname: "Inscription #45376",
+        amount: "0.02 ETH",
+        time: "2hrs ago"
+      },
+      {
+        song_name: "Feelings",
+        subname: "Inscription #45376",
+        amount: "0.02 ETH",
+        time: "2hrs ago"
+      },
+      {
+        song_name: "Feelings",
+        subname: "Inscription #45376",
+        amount: "0.02 ETH",
+        time: "2hrs ago"
+      },
+      {
+        song_name: "Feelings",
+        subname: "Inscription #45376",
+        amount: "0.02 ETH",
+        time: "2hrs ago"
+      },
+    ]
 
   return (
     <MainAppWrapper>
@@ -23,6 +73,10 @@ const MarketPlace = () => {
                 <img src="./sort-icon.svg" alt="" />
                 <span>Filter</span>
             </div>
+            <div className="slide flx">
+                <img src="./black-check-icon.svg" alt="" />
+                <span>Afrobeats</span>
+            </div>
             {genres.map((genre) => (
             <div key={genre} className={`${cat == {genre} ? "block selected" : ""} slide p-2 flex`}>
                 <img src="./check-icon.svg" alt="" className={`${cat == genre ? "flex" : "hidden"} text-green-500`} />
@@ -31,111 +85,25 @@ const MarketPlace = () => {
             ))}
         </div>
 
-        <div className="items-ctn flx">
-            <div className="card-ctn">
-                <img src="./monkey1.png" alt="" className='monkey-img' />
-                <p className="feelings">Feelings</p>
-                <p className="small-gray-text">Inscription #45376</p>
+        <div className="items-ctn flx px-2">
+          {albums.map(album => (
+            <div className="card-ctn group hover:scale-105 transition duration-300 ease-in-out">
+                <div className="mokey-div-ctn bg-[url('./monkey-alone.png')] bg-no-repeat bg-contain opacity-90 flex justify-center items-center h-52 group-hover:opacity-100">
+                  {/* <img src="./monkey-alone.png" alt="" className='monkey-img' /> */}
+                  <img src="./monkey-play.png" alt="" className='' />
+                </div>
+                <p className="feelings">{album.song_name}</p>
+                <p className="small-gray-text">{album.subname}</p>
                 <hr className="small-rule" />
                 <div className="band-ctn flx">
-                    <p>0.02 ETH</p>
+                    <p>{album.amount}</p>
                     <div className="flx">
                         <img src="./clock.svg" alt="" />
-                        <p>2hrs ago</p>
+                        <p>{album.time}</p>
                     </div>
                 </div>
             </div>
-            <div className="card-ctn">
-                <img src="./monkey1.png" alt="" className='monkey-img' />
-                <p className="feelings">Feelings</p>
-                <p className="small-gray-text">Inscription #45376</p>
-                <hr className="small-rule" />
-                <div className="band-ctn flx">
-                    <p>0.02 ETH</p>
-                    <div className="flx">
-                        <img src="./clock.svg" alt="" />
-                        <p>2hrs ago</p>
-                    </div>
-                </div>
-            </div>
-            <div className="card-ctn">
-                <img src="./monkey1.png" alt="" className='monkey-img' />
-                <p className="feelings">Feelings</p>
-                <p className="small-gray-text">Inscription #45376</p>
-                <hr className="small-rule" />
-                <div className="band-ctn flx">
-                    <p>0.02 ETH</p>
-                    <div className="flx">
-                        <img src="./clock.svg" alt="" />
-                        <p>2hrs ago</p>
-                    </div>
-                </div>
-            </div>
-            <div className="card-ctn">
-                <img src="./monkey1.png" alt="" className='monkey-img' />
-                <p className="feelings">Feelings</p>
-                <p className="small-gray-text">Inscription #45376</p>
-                <hr className="small-rule" />
-                <div className="band-ctn flx">
-                    <p>0.02 ETH</p>
-                    <div className="flx">
-                        <img src="./clock.svg" alt="" />
-                        <p>2hrs ago</p>
-                    </div>
-                </div>
-            </div>
-            <div className="card-ctn">
-                <img src="./monkey1.png" alt="" className='monkey-img' />
-                <p className="feelings">Feelings</p>
-                <p className="small-gray-text">Inscription #45376</p>
-                <hr className="small-rule" />
-                <div className="band-ctn flx">
-                    <p>0.02 ETH</p>
-                    <div className="flx">
-                        <img src="./clock.svg" alt="" />
-                        <p>2hrs ago</p>
-                    </div>
-                </div>
-            </div>
-            <div className="card-ctn">
-                <img src="./monkey1.png" alt="" className='monkey-img' />
-                <p className="feelings">Feelings</p>
-                <p className="small-gray-text">Inscription #45376</p>
-                <hr className="small-rule" />
-                <div className="band-ctn flx">
-                    <p>0.02 ETH</p>
-                    <div className="flx">
-                        <img src="./clock.svg" alt="" />
-                        <p>2hrs ago</p>
-                    </div>
-                </div>
-            </div>
-            <div className="card-ctn">
-                <img src="./monkey1.png" alt="" className='monkey-img' />
-                <p className="feelings">Feelings</p>
-                <p className="small-gray-text">Inscription #45376</p>
-                <hr className="small-rule" />
-                <div className="band-ctn flx">
-                    <p>0.02 ETH</p>
-                    <div className="flx">
-                        <img src="./clock.svg" alt="" />
-                        <p>2hrs ago</p>
-                    </div>
-                </div>
-            </div>
-            <div className="card-ctn">
-                <img src="./monkey1.png" alt="" className='monkey-img' />
-                <p className="feelings">Feelings</p>
-                <p className="small-gray-text">Inscription #45376</p>
-                <hr className="small-rule" />
-                <div className="band-ctn flx">
-                    <p>0.02 ETH</p>
-                    <div className="flx">
-                        <img src="./clock.svg" alt="" />
-                        <p>2hrs ago</p>
-                    </div>
-                </div>
-            </div>
+          ))}
         </div>
     </div>
     </MainAppWrapper>
