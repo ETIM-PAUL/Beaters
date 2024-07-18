@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />}>
+        <Route path='/' element={<Home />}>
           <Route index element={<Dashboard />} />
           <Route path='marketplace' element={<Marketplace />} />
           <Route path='matchmaking' element={<Matchmaking />} />
