@@ -1,9 +1,10 @@
 import React from 'react'
+import MainAppWrapper from '../components/MainAppWrapper'
 
 const Feed = () => {
 
   return (
-    <Feed>
+    <MainAppWrapper>
     <div className='dash-ctn'>
         <div className="welcome-ctn">
             <div className="welcome-text-ctn medium-gray-text">
@@ -218,7 +219,7 @@ const Feed = () => {
             </div>
         </div>
     </div>
-    </Feed>
+    </MainAppWrapper>
   )
 }
 
