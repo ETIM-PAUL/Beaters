@@ -5,14 +5,14 @@ const Feed = () => {
 
   return (
     <MainAppWrapper>
-    <div className='dash-ctn'>
-        <div className="welcome-ctn">
+    <div className='dash-ctn max-w-[70vw]'>
+        <div className="welcome-ctn mb-8">
             <div className="welcome-text-ctn medium-gray-text">
                 <h4>Feed</h4>
                 <p>Accounts you follow.</p>
             </div>
             <div className="welcome-btn flx">
-                <div className="addy-ctn flx">
+                <div className="addy-ctn flx py-3 hover:opacity-60">
                     <p className="dot"></p>
                     <p className="addy">Oxd38...CFC4</p>
                 </div>
@@ -20,13 +20,13 @@ const Feed = () => {
             </div>
         </div>
 
-        <div className="chats-div-ctn">
-            <div className="input-text-ctn">
+        <div className="chats-div-ctn flex-wrap md:flex-nowrap">
+            <div className="input-text-ctn mr-6 flex-1 md:flex-auto">
                 {/* <input name="chat" id="chat" className='chat-input' placeholder="Say Something" /> */}
                 <div className="chat-ctn">
                     <textarea name="chat" id="" className='chat-input' placeholder="Say Something"></textarea>
                     <div className="chat-icons-div flx">
-                        <div className="lhs-icons">
+                        <div className="lhs-icons flx">
                             <img src="./image.svg" alt="" />
                             <img src="./camera.svg" alt="" />
                             <img src="./paperclip.svg" alt="" />
@@ -44,7 +44,7 @@ const Feed = () => {
                             <span className='medium-gray-text'>Today 22:10</span>
                         </div>
                         <div className="comment-div">
-                            <p className="medium-black-text text-l">just made and published my new beat here. preview it.</p>
+                            <p className="medium-black-text text-l mb-2">just made and published my new beat here. preview it.</p>
                         </div>
                         <div className="player-div flx">
                             <img src="./play-icon.png" alt="" className="play" />
@@ -69,7 +69,7 @@ const Feed = () => {
                             <span className='medium-gray-text'>Today 22:10</span>
                         </div>
                         <div className="comment-div">
-                            <p className="medium-black-text text-l">just made and published my new beat here. preview it.</p>
+                            <p className="medium-black-text text-l mb-2">just made and published my new beat here. preview it.</p>
                         </div>
                         <div className="player-div flx">
                             <img src="./play-icon.png" alt="" className="play" />
@@ -94,7 +94,7 @@ const Feed = () => {
                             <span className='medium-gray-text'>Today 22:10</span>
                         </div>
                         <div className="comment-div">
-                            <p className="medium-black-text text-l">just made and published my new beat here. preview it.</p>
+                            <p className="medium-black-text text-l mb-2">just made and published my new beat here. preview it.</p>
                         </div>
                         {/* <div className="player-div flx">
                             <img src="./play-icon.png" alt="" className="play" />
@@ -119,7 +119,7 @@ const Feed = () => {
                             <span className='medium-gray-text'>Today 22:10</span>
                         </div>
                         <div className="comment-div">
-                            <p className="medium-black-text text-l">just made and published my new beat here. preview it.</p>
+                            <p className="medium-black-text text-l mb-2">just made and published my new beat here. preview it.</p>
                         </div>
                         {/* <div className="player-div flx">
                             <img src="./play-icon.png" alt="" className="play" />
@@ -140,78 +140,78 @@ const Feed = () => {
                 </div>
             </div>
 
-            <div className="follow-div-ctn">
+            <div className="follow-div-ctn flex-1 md:flex-auto">
                 <p className='big-black-text'>Add to your feed</p>
                 <div className="follow-feed-div">
-                    <div className="follow-div flx">
-                        <div className='flx'>
+                    <div className="follow-div flx w-[70%] w-md-[100%]">
+                        <div className='flx mr-10'>
                             <img src="./avatar.png" alt="" />
-                            <div className="follow-text-div">
+                            <div className="follow-text-div mx-3">
                                 <p className='medium-black-text'>Sarah.eth</p>
                                 <p className='medium-gray-text'>Afrobeats</p>
                             </div>
                         </div>
-                        <div className="follow-btn-div flx">
+                        <div className="follow-btn-div flx sm:px-10 md:px-0">
                             <p className='small-gray-text'>Follow</p>
                         </div>
                     </div>
-                    <div className="follow-div flx">
-                        <div className='flx'>
+                    <div className="follow-div flx w-[70%] w-md-[100%]">
+                        <div className='flx mr-10'>
                             <img src="./avatar.png" alt="" />
-                            <div className="follow-text-div">
+                            <div className="follow-text-div mx-3">
                                 <p className='medium-black-text'>Sarah.eth</p>
                                 <p className='medium-gray-text'>Afrobeats</p>
                             </div>
                         </div>
-                        <div className="follow-btn-div flx">
+                        <div className="follow-btn-div flx sm:px-10 md:px-0">
                             <p className='small-gray-text'>Follow</p>
                         </div>
                     </div>
-                    <div className="follow-div flx">
-                        <div className='flx'>
+                    <div className="follow-div flx w-[70%] w-md-[100%]">
+                        <div className='flx mr-10'>
                             <img src="./avatar.png" alt="" />
-                            <div className="follow-text-div">
+                            <div className="follow-text-div mx-3">
                                 <p className='medium-black-text'>Sarah.eth</p>
                                 <p className='medium-gray-text'>Afrobeats</p>
                             </div>
                         </div>
-                        <div className="follow-btn-div flx">
+                        <div className="follow-btn-div flx sm:px-10 md:px-0">
                             <p className='small-gray-text'>Follow</p>
                         </div>
                     </div>
-                    <div className="follow-div flx">
-                        <div className='flx'>
+                    <div className="follow-div flx w-[70%] w-md-[100%]">
+                        <div className='flx mr-10'>
                             <img src="./avatar.png" alt="" />
-                            <div className="follow-text-div">
+                            <div className="follow-text-div mx-3">
                                 <p className='medium-black-text'>Sarah.eth</p>
                                 <p className='medium-gray-text'>Afrobeats</p>
                             </div>
                         </div>
-                        <div className="follow-btn-div flx">
+                        <div className="follow-btn-div flx sm:px-10 md:px-0">
                             <p className='small-gray-text'>Follow</p>
                         </div>
                     </div>
-                    <div className="follow-div flx">
-                        <div className='flx'>
+                    <div className="follow-div flx w-[70%] w-md-[100%]">
+                        <div className='flx mr-10'>
                             <img src="./avatar.png" alt="" />
-                            <div className="follow-text-div">
+                            <div className="follow-text-div mx-3">
                                 <p className='medium-black-text'>Sarah.eth</p>
                                 <p className='medium-gray-text'>Afrobeats</p>
                             </div>
                         </div>
-                        <div className="follow-btn-div flx">
+                        <div className="follow-btn-div flx sm:px-10 md:px-0">
                             <p className='small-gray-text'>Follow</p>
                         </div>
                     </div>
-                    <div className="follow-div flx">
-                        <div className='flx'>
+                    <div className="follow-div flx w-[70%] w-md-[100%]">
+                        <div className='flx mr-10'>
                             <img src="./avatar.png" alt="" />
-                            <div className="follow-text-div">
+                            <div className="follow-text-div mx-3">
                                 <p className='medium-black-text'>Sarah.eth</p>
                                 <p className='medium-gray-text'>Afrobeats</p>
                             </div>
                         </div>
-                        <div className="follow-btn-div flx">
+                        <div className="follow-btn-div flx sm:px-10 md:px-0">
                             <p className='small-gray-text'>Follow</p>
                         </div>
                     </div>

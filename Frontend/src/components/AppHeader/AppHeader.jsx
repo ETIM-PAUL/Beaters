@@ -2,11 +2,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { GlobalContext } from "../../context/Global/GlobalContext";
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 
 export const AppHeader = () => {
   const { state, dispatch } = React.useContext(GlobalContext);
-  let { isOpen } = state;
+  let { isOpen } =  useMediaQuery('(max-width:768px)') ? false: state;
   let toggleOpen = (open) =>
     dispatch({
       type: "OPEN_SIDEBAR",
@@ -23,12 +24,11 @@ export const AppHeader = () => {
   }
 
   return (
-    <div className={`sidebar-holde bg-[#1A2335] h-full fixe ${!state?.isOpen ? "open-na w-[80px] md:w-[80px]" : "w-[270px]"}`}>
+    <div className={`sidebar-holde bg-[#1A2335] h-full fixe ${!isOpen ? "open-na w-[10vw] md:w-[10vw]" : "w-[25vw]"}`}>
       <div className="scrollbar flex flex-col h-screen overflow-scroll pb-8 pt-4 px-3">
         <div className="self-center w-full max-w-[1408px] max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-full max-md:ml-0 mt-6 max-md:w-full no-underline">
-              
               <div className="flex gap-2 items-center">
               {!isOpen ? (
                 <img src="./s.png" alt="" onClick={() => toggleOpen(!isOpen)} className="ml-3 cursor-pointer" />
@@ -76,7 +76,7 @@ export const AppHeader = () => {
                   <path d="M8.5 3.25H3.25V8.5H8.5V3.25Z" stroke="#969FB1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                     
-                  <div className={`my-auto ${!state?.isOpen ? "hidden" : "block"}`}>Dashboard</div>
+                  <div className={`my-auto ${!isOpen ? "hidden" : "block"}`}>Dashboard</div>
                 </NavLink>
 
                 <NavLink
@@ -90,7 +90,7 @@ export const AppHeader = () => {
                     <path d="M3.9624 5.54492L7.4049 11.4999" stroke="#969FB1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
 
-                    <div className={`my-auto ${!state?.isOpen ? "hidden" : "block"}`}>Feed</div>
+                    <div className={`my-auto ${!isOpen ? "hidden" : "block"}`}>Feed</div>
                 </NavLink>
 
                 <NavLink
@@ -103,7 +103,7 @@ export const AppHeader = () => {
                 </svg>
 
 
-                    <div className={`my-auto ${!state?.isOpen ? "hidden" : "block"}`}>Marketplace</div>
+                    <div className={`my-auto ${!isOpen ? "hidden" : "block"}`}>Marketplace</div>
                 </NavLink>
 
                 <NavLink
@@ -114,7 +114,7 @@ export const AppHeader = () => {
                 <path d="M2.5 10L10 13.75L17.5 10" stroke="#969FB1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M10 2.5L2.5 6.25L10 10L17.5 6.25L10 2.5Z" stroke="#969FB1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                    <div className={`my-auto ${!state?.isOpen ? "hidden" : "block"}`}>Matcher</div>
+                    <div className={`my-auto ${!isOpen ? "hidden" : "block"}`}>Matcher</div>
                 </NavLink>
 
               </div>
