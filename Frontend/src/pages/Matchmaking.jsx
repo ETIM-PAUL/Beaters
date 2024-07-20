@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FilterComp from '../components/Filter';
+import FilterComp from '../components/filter';
 
 const Matchmaking = () => {
 

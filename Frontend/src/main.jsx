@@ -19,7 +19,7 @@ import { providers } from "ethers";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (<Home/>)
+    element: (<Dashboard/>)
     ,
   },
   {

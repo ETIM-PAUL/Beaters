@@ -8,10 +8,12 @@ const MainAppWrapper = ({ children }) => {
   const { state, dispatch } = React.useContext(GlobalContext);
 
   return (
-    <div id="admin_wrapper" className={`flex w-full max-w-full`}>
+    <div id="admin_wrapper" className={`flex w-full max-w-full overflow-hidden min-w-full`}>
+      <div className="">
         <AppHeader />
-      <div className={`flex h-screen w-full p-10`}>
-        <div className={`mb-0 w-full overflow-hidden mx-auto bg-[#fff] ${state?.isOpen ? "w-full" : ""}`}>
+      </div>
+      <div className={`flex h-screen p-10`}>
+        <div className={`mb-0 w-[74vw] overflow-hidden mx-auto bg-[#fff] ${state?.isOpen ? "w-full" : ""}`}>
           {/* <TopHeader /> */}
           <Suspense
             fallback={

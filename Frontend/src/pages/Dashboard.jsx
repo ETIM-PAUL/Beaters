@@ -12,11 +12,11 @@ const Dashboard = () => {
         <div className="welcome-ctn grid grid-cols-2">
         <div className="welcome-text-ctn medium-gray-text flex flex-col">
                 <h4>Welcome back, Prince</h4>
-                <p className='mt-4'>Here’s an overview of your beats minted.</p>
+                <p className=''>Here’s an overview of your beats minted.</p>
             </div>
 
             <div className="welcome-btn flx">
-                <div className="addy-ctn flx">
+                <div className="addy-ctn flx py-3 hover:opacity-60">
                     <p className="dot"></p>
                     <p className="addy">Signin With Farcast</p>
                 </div>
@@ -27,17 +27,17 @@ const Dashboard = () => {
             <div className="card-div first">
                 <p className="card-text medium-gray-text">Total balance made</p>
                 <p className="card-hero">0.0456 ETH</p>
-                <p className='card-text'> <img src="./uparrow.svg" alt="" /> 0.044ETH compared to last month</p>
+                <p className='card-text flex'> <img src="./uparrow.svg" alt="" /> 0.044ETH compared to last month</p>
             </div>
             <div className="card-div">
                 <p className="card-text medium-gray-text">Total beats uploaded</p>
                 <p className="card-hero">10</p>
-                <p className='card-text'> <img src="./uparrow.svg" alt="" /> 4 compared to last month</p>
+                <p className='card-text flex'> <img src="./uparrow.svg" alt="" /> 4 compared to last month</p>
             </div>
             <div className="card-div">
                 <p className="card-text medium-gray-text">Total beats purchased</p>
                 <p className="card-hero">10</p>
-                <p className='card-text'> <img src="./uparrow.svg" alt="" /> 4 compared to last month</p>
+                <p className='card-text flex'> <img src="./uparrow.svg" alt="" /> 4 compared to last month</p>
             </div>
         </div>
 
@@ -45,7 +45,9 @@ const Dashboard = () => {
             <table>
                 <thead>
                     <tr>
-                        <th>Beats</th>
+                        <th>
+                            <div className='my-6'>Beats</div>
+                        </th>
                         <th>Asking price</th>
                         <th>Floor price</th>
                         <th>Number of sales</th>
