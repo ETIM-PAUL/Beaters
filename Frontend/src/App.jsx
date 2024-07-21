@@ -19,8 +19,7 @@ import { providers } from "ethers";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (<Dashboard/>)
-    ,
+    element: <Dashboard/>,
   },
   {
     path: "/dashboard",
@@ -57,10 +56,10 @@ const config = {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <AuthKitProvider config={config}>
-      <GlobalProvider>
+    <GlobalProvider>
     <RouterProvider router={router} />
-  </GlobalProvider>
-    </AuthKitProvider>
+    </GlobalProvider>
+  </AuthKitProvider>
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>,
