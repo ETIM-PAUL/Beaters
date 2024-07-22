@@ -13,7 +13,7 @@ const MainAppWrapper = ({ children }) => {
         <AppHeader />
       </div>
       <div className={`flex h-screen p-10`}>
-        <div className={`mb-0 w-[74vw] overflow-hidden mx-auto bg-[#fff] ${state?.isOpen ? "w-full" : ""}`}>
+        <div className={`mb-0 w-[100%] overflow-hidden mx-auto bg-[#fff] ${state?.isOpen ? "w-full" : ""}`}>
           {/* <TopHeader /> */}
           <Suspense
             fallback={
