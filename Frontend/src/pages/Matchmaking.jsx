@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import FilterComp from '../components/filter';
+import MainAppWrapper from '../components/MainAppWrapper';
 
 const Matchmaking = () => {
 
     const [options, showOptions] = useState(false)
   return (
+    <MainAppWrapper>
     <div className='market-ctn'>
         <div className="welcome-ctn grid grid-cols-2">
             <div className="welcome-text-ctn medium-gray-text">
@@ -92,6 +94,7 @@ const Matchmaking = () => {
             </div>
         </div>
     </div>
+    </MainAppWrapper>
   )
 }
 
