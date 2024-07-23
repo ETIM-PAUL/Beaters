@@ -21,11 +21,7 @@
     "react-hook-form": "^7.34.2",
     "react-router-dom": "^6.24.1",
     "react-spinners": "^0.14.1",
-<<<<<<< HEAD
     "viem": "^2.17.8",
-=======
-    "viem": "^2.17.9",
->>>>>>> 90d6cc39536f59eecb9e8215febfaa7ee9ca1136
     "vite-plugin-node-polyfills": "^0.21.0",
     "yup": "^0.32.11"
   },
