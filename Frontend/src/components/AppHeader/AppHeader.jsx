@@ -24,7 +24,7 @@ export const AppHeader = () => {
   }
 
   return (
-    <div className={`sidebar-holde bg-[#1A2335] h-full fixe ${!isOpen ? "open-na w-[10vw] md:w-[10vw]" : "w-[25vw]"}`}>
+    <div className={`sidebar-holde bg-[#1A2335] h-full fixe ${!isOpen ? "open-na w-[15vw] md:w-[15vw]" : "w-[35vw] sm:w-[20vw]"}`}>
       <div className="scrollbar flex flex-col h-screen overflow-scroll pb-8 pt-4 px-3">
         <div className="self-center w-full max-w-[1408px] max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
